@@ -16,9 +16,8 @@ Our schedule looks like this, but can change as your interests dictate
 |1:00 - 1:15 | Recap ||
 |1:15 - 2:30 | Python Two | |
 |2:30 - 2:45 | Break | |
-|2:45 - 3:00 | ?? | |
-|3:00 - 4:00 | Data Crunching with Pandas | |
-|4:00 - 4:15 | Wrap-up | |
+|2:45 - 3:30 | Data Crunching with Pandas | |
+|3:30 - 4:15 | Wrap-up | |
 
 ##Day Two
 
