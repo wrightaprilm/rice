@@ -1,0 +1,9 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type
+2014-10-13T18:23:33.660Z,34.279,-117.0265,8.04,1.28,ml,36,53,0.02817,0.21,ci,ci37278728,2014-10-13T18:27:30.480Z,"10km NE of Running Springs, California",earthquake
+2014-10-13T18:18:37.870Z,37.4824982,-118.7771683,8.04,1.37,md,13,155,0.04445,0.02,nc,nc72326521,2014-10-13T18:28:04.780Z,"25km SE of Mammoth Lakes, California",earthquake
+2014-10-13T18:07:58.010Z,38.8274994,-122.8048325,2.77,0.56,md,9,91,0.005793,0.02,nc,nc72326511,2014-10-13T18:28:04.778Z,"6km NW of The Geysers, California",earthquake
+2014-10-13T17:59:01.090Z,37.462,-118.6992,0.02,0.39,ml,9,129.03,0.017,,nn,nn00463831,2014-10-13T18:00:23.130Z,"24km WNW of West Bishop, California",earthquake
+2014-10-13T17:57:26.000Z,61.135,-149.7444,28.3,1.6,ml,,,,0.79,ak,ak11417331,2014-10-13T18:17:25.764Z,"12km SE of Anchorage, Alaska",earthquake
+2014-10-13T17:46:04.000Z,61.1467,-141.4799,0.2,1.2,ml,,,,0.63,ak,ak11417269,2014-10-13T18:03:01.539Z,"131km NNE of Cape Yakataga, Alaska",earthquake
+2014-10-13T17:42:55.800Z,38.788166,-122.7713318,3.03,0.86,md,15,77,0.01389,0.02,nc,nc72326496,2014-10-13T17:58:06.509Z,"1km NW of The Geysers, California",earthquake
+2014-10-13T17:40:18.000Z,61.9833,-149.3583,15.9,1.6,ml,,,,0.76,ak,ak11417267,2014-10-13T18:03:00.962Z,"27km NNW of Fishhook, Alaska",earthquake
