@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<title>/idTAgKeKwo</title>
+</head>
+<body><b>Rice software carpentry workshop</b><br
+/>To grab the workshop data:<br
+/>$ cd ~/Desktop<br
+/>$ mkdir workshop<br
+/>$ cd workshop<br
+/>$ git clone <a href="https://github.com/wrightaprilm/rice.git">https://github.com/wrightaprilm/rice.git</a><br
+/><br
+/>You can follow along on your laptop, or, if you have a preference for CLEAR, ssh to ssh.clear.rice.edu and do the work there (you can create the workshop directory in your home directory instead of your Desktop if you prefer.)<br
+/><br
+/><b>Shell basics:</b><br
+/><ul><li>whoami</li
+><li>pwd</li
+><li>cd</li
+><li>ls</li
+><li>ls -F&nbsp;&nbsp;&nbsp; or&nbsp; -a&nbsp;&nbsp;&nbsp; or -Fa&nbsp;&nbsp; (directory)</li
+><li>mkdir</li
+><li>nano filename</li
+><li>rm</li
+><li>mv</li
+><li>cp<br/><br
+/></li></ul
+><b>Python Intro</b><br
+/><ul><li>Useful functions<ul><li>type</li
+><li>print</li
+><li>str</li
+><li>int<br/><br
+/></li></ul
+></li></ul
+><b>Operator Precedence: </b><a href="http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/op_precedence.html">http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/op_precedence.html</a><br
+/><br
+/><a href="http://www.codeacademy.com/en/tracks/python">http://www.codeacademy.com/en/tracks/python</a><br
+/><br
+/><b>What is #! at the beginning of the file?</b><br
+/>Location to where python is located<br
+/>Find it using "which" command<br
+/>$ which python<br
+/>/usr/bin/python<br
+/>and put this location in your PATH<br
+/>$echo whoami<br
+/>$export $PATH=$PATH:/usr/bin<br
+/><br
+/>A useful way to look at quotes and strings in python is to avoid having to 'escape' quotes.<br
+/>i.e. These are equivalent:<br
+/>string='Don\'t forget to escape the apostrophe here.'<br
+/>string="Don't forget to escape the apostrophe here."<br
+/>but one is easier to read.<br
+/>This also works:<br
+/>string="""You can use 'any' "old" quotes here."""<br
+/><br
+/><b>Condition Flow Challenge</b><br
+/><br
+/>Download the "All Earthquakes"&nbsp; CSV from <a href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php">http://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php</a><br
+/><br
+/>Write a short python code to read this file and print lines from this file using "for" statement. Assign the rows in this file to a list variable.&nbsp;<br
+/><br
+/>Can you improve this code?<br
+/><br
+/>#!/usr/bin/python<br
+/><br
+/>quakefile=open("all_hour.csv", 'r')<br
+/><br
+/>line_list=[]<br
+/><br
+/>for line in quakefile.readlines():<br
+/>#&nbsp;&nbsp;&nbsp; print line<br
+/>&nbsp;&nbsp;&nbsp; line_list.append((line).strip().split(','))<br
+/><br
+/>#Print all list<br
+/>#print line_list<br
+/><br
+/>#Print length of list<br
+/>print ("Number of lines in file: %s " % str(len(line_list)))<br
+/><br
+/>#Print second line<br
+/>#print line_list[2]<br
+/><br
+/>#If state is Alaska print quakes<br
+/><br
+/>for row in line_list:<br
+/>&nbsp;&nbsp;&nbsp; if "Alaska" in row[14]:<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print ("Time of occurrence: %s" % row[0])<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print ("Latitude: %s" % row[1])<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print ("Longitude: %s" % row[2])<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # or all in one line like this<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print ("An earthquake has occurred in Alaska at %s at Latitude: %s and Longitude: %s" % (row[0],row[1],row[2]))&nbsp;&nbsp;<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;<br
+/><br
+/><b>Importing modules in python</b><br
+/>Modules are add-on libraries that enhance the functionality of the basic Python offerings<br
+/>The most basic way to bring in the functions of a module is to use import module_name<br
+/><br
+/><br
+/><b>Pandas</b>:<br
+/>(Start python from the data-crunching directory of the git repo)<br
+/>import pandas<br
+/>species = pandas.import_csv('species.csv')<br
+/><br
+/><b>Tip:</b> Use the python "dir" command to 'look around' a module or any other object that has methods (functions) built-in...&nbsp;<br
+/>For example:<br
+/>dir(pandas) # list all methods you can call from pandas (like pandas.read_csv)<br
+/>or<br
+/>dir(species) #&nbsp; list all the methods that belong to a 'core.frame.DataFrame' object from pandas<br
+/>Even better, use the "help" function to read the online help for a specific data object or module<br
+/><br
+/><b>Handling Excel data in pandas</b>:<br
+/>import pandas<br
+/><br
+/>surveyfile = pandas.ExcelFile("surveys.xlsx")<br
+/>surveyfile.sheet_names&nbsp; # to list sheet names, so you may parse the right sheet<br
+/>[u'Sheet1']<br
+/>surveys=surveyfile.parse("Sheet1")<br
+/>And now surveys is a data frame of sheet1 from surveys.xlsx<br
+/><br
+/><br
+/></body>
+</html>
