@@ -30,11 +30,11 @@ Useful functions
 
 http://www.codeacademy.com/en/tracks/python
 
-## Operator Precedence:
+### Operator Precedence:
 http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/op_precedence.html
 
 
-## What is #! at the beginning of the file?
+### What is #! at the beginning of the file?
 Location to where python is located
 Find it using "which" command
 ```
@@ -59,7 +59,7 @@ This also works:
 string="""You can use 'any' "old" quotes here."""
 ```
 
-## Condition Flow Challenge
+### Condition Flow Challenge
 
 Download the "All Earthquakes"  CSV from http://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php
 
@@ -99,7 +99,7 @@ for row in line_list:
 ```
     
 
-## Importing modules in python
+### Importing modules in python
 Modules are add-on libraries that enhance the functionality of the basic Python offerings
 The most basic way to bring in the functions of a module is to use import module_name
 
@@ -120,7 +120,7 @@ dir(species) #  list all the methods that belong to a 'core.frame.DataFrame' obj
 ```
 Even better, use the "help" function to read the online help for a specific data object or module
 
-## Handling Excel data in pandas:
+### Handling Excel data in pandas:
 ```python
 import pandas
 
