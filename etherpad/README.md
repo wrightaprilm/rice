@@ -132,3 +132,39 @@ surveys=surveyfile.parse("Sheet1")
 And now surveys is a data frame of sheet1 from surveys.xlsx
 
 
+## Running the ipython notebook:
+
+From the 'Plotting' directory of the cloned repo at https://github.com/wrightaprilm/rice.git:
+
+```ipython notebook Rice_plotting.ipynb```
+
+### Coding for readability:
+
+"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."
+
+-John F. Woods, in a comp.lang.c++ discussion in 1991, 
+ later used in the Usenet sig of Martin Golding circa 1994, 
+ re-popularized by Damien Conway in "Perl Best Practices" in 2005,
+ repeated by  hackers around the globe, 
+ eventually uttered in passing by an undisclosed Rice physicist to Joseph Ghobrial,
+ and alluded to in a Software Carpentry Workshop by Chandler Wilkerson.
+
+### General recommendations for Python programming:
+* see https://github.com/wrightaprilm/rice/blob/master/python/speedups.md for some optimization tips
+* investigate 'list comprehensions' as replacement for traditional loops and the 'map' function
+* iPython is used by many for interactive programming (and even combines with some editors to provide a useful IDE)
+* see https://wiki.python.org/moin/PythonSpeed/PerformanceTips for more optimization recommendations
+
+
+## More pandas
+```
+pandas.DataFrame.to_csv()
+```
+
+## Version control:
+
+lessons: http://chwilk.github.io/2014-10-13-rice/novice/git/
+Git reference: http://chwilk.github.io/2014-10-13-rice/novice/ref/02-git.html
+
+Investigate git bare repos
+
